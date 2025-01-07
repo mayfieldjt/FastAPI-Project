@@ -1,5 +1,0 @@
-psycopg2
-fastapi
-uvicorn
-gunicorn
-os
