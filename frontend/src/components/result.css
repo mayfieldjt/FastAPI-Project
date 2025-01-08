@@ -1,0 +1,54 @@
+.result {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 0; 
+  background-color: transparent; 
+  border: none; 
+  box-shadow: none; 
+  width: auto; 
+  max-width: none; 
+}
+
+.result ul {
+  list-style-type: none;
+  padding: 0;
+}
+  
+.result li {
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  margin: 5px 0;
+  cursor: pointer;
+  color: var(--button-text);
+  text-decoration: underline;
+  transition: background-color 0.3s;
+}
+
+.result li:hover {
+  background-color: var(--button-hover-bg);
+}
+  
+.level-boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+.level-boxes > div {
+  flex: 1;
+  padding: 10px;
+  min-width: 150px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background-color: var(--card-bg);
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+  
+.level-boxes > div strong {
+  display: block;
+  margin-bottom: 5px;
+}  
