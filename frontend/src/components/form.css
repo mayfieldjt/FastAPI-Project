@@ -1,0 +1,28 @@
+.form {
+    margin: 20px 20px;
+}
+.form input {
+    margin: 10px;
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+  
+.form button {
+    margin: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+    color: var(--button-text);
+    background-color: var(--button-bg);
+    border: 1px solid var(--border-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+  
+.form button:hover {
+    background-color: var(--button-hover-bg);
+}
