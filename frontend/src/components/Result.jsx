@@ -1,5 +1,5 @@
 import React from "react";
-import Plotly from "plotly.js";
+import Plotly from "plotly.js-basic-dist";
 import "./result.css";
 
 const Result = ({ results, evaluation, onSelectDrug, hasSelection }) => {
