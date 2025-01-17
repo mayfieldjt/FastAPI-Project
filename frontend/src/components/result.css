@@ -1,0 +1,84 @@
+.result {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px; /* Increased padding for better spacing */
+  background-color: var(--background-color, #f9f9f9); /* Add a fallback color */
+  border: 1px solid var(--border-color, #ddd); /* Subtle border for separation */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  width: auto;
+  max-width: 800px; /* Limit maximum width */
+  margin-left: auto;
+  margin-right: auto; /* Center alignment */
+}
+
+.result ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Remove default margin */
+}
+
+.result li {
+  padding: 12px; /* Increased padding for better click area */
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: 4px; /* Slight rounding for better appearance */
+  margin: 8px 0; /* Increased spacing between items */
+  cursor: pointer;
+  color: var(--button-text, #007BFF); /* Use primary color */
+  text-decoration: underline;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth hover effects */
+}
+
+.result li:hover {
+  background-color: var(--button-hover-bg, #f0f8ff); /* Subtle highlight */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.level-boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px; /* Slightly larger gap for spacing */
+  margin-top: 20px; /* Increase spacing from other content */
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.level-boxes > div {
+  flex: 1;
+  padding: 10px; /* Increased padding for better readability */
+  min-width: 120px; /* Slightly larger minimum width */
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: 8px; /* Rounder corners */
+  background-color: var(--card-bg, #ffffff);
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better appearance */
+  transition: transform 0.2s, box-shadow 0.2s; /* Interactive hover effects */
+}
+
+.level-boxes > div:hover {
+  transform: translateY(-2px); /* Lift effect on hover */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+}
+
+.level-boxes > div strong {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--text-color, #333); /* Ensure contrast for accessibility */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .level-boxes {
+    flex-direction: column; /* Stack boxes vertically */
+    gap: 10px;
+  }
+
+  .result {
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+
+  .result li {
+    padding: 10px;
+  }
+}
