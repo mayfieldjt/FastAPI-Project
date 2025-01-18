@@ -1,0 +1,61 @@
+:root {
+  --text-color: #333;
+  --background-color: #f9f9f9;
+  --card-bg: #ffffff;
+  --border-color: #ddd;
+  --button-text: #007bff;
+  --button-bg: #e7f1ff;
+  --button-hover-bg: #cce4ff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  text-align: center;
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  margin: 10px auto;
+  box-sizing: border-box;
+}
+
+.app-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 15px;
+  white-space: nowrap;
+  transition: color 0.3s;
+}
+
+.reset-button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: var(--button-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--button-text);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.reset-button:hover {
+  background-color: var(--button-hover-bg);
+  transform: translateY(-2px);
+}
+.app {
+  border: 1px solid red;
+  min-height: 100vh;
+}
